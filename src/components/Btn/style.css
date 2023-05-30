@@ -1,0 +1,58 @@
+.btn a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 14px 32px;
+    width: 250px;
+    height: 60px;
+    background: var(--golden-rod);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white-smoke);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1024px) {
+    .btn a{
+        padding: 18px 24px;
+        width: 210px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .btn a {
+        padding: 16px 28px;
+        width: 200px;
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .btn a{
+        width: 174px;
+        height: 40px;
+        font-size: 14px;
+        }
+    
+}
+
+@media screen and (max-width: 670px) {
+    .btn a{
+        padding: 5px;
+        height: 35px;
+        width: 150px;
+        font-size: 14px;
+        }
+    
+}
+
+
+
+

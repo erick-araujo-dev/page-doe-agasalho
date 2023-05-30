@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: 000;
+}
+
+.App {
+  text-align: center;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Efeito de balanço no botao */
+@keyframes swing {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+
+/*Animation*/
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(-180px);
+  animation: slideIn 2.5s ease forwards;
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(180px);
+  animation: slideIn 2.5s ease forwards;
+}
+
+.slide-in-line {
+  opacity: 0;
+  animation: slideInLine 2.5s ease forwards;
+}
+
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLine {
+  to {
+    opacity: 1;
+    transform: rotate(90deg);
+
+  }
+
+  from {
+    opacity: 0;
+    transform: translateY(180px);
+  }
+}

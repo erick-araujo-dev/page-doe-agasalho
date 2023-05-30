@@ -1,0 +1,352 @@
+/*main*/
+.collection-point {
+    padding-top: 80px;
+}
+
+.collection-point h1 {
+    width: 1200px;
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--dark-brown);
+    border-top: 4px solid var(--dark-brown);
+    border-bottom: 4px solid var(--dark-brown);
+    margin: auto;
+    margin-top: 40px;
+}
+
+/*cards pontos de coleta*/
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 420px;
+    border: 2px solid var(--dark-brown);
+    margin: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.4);
+    background-color: var(--rosy-brown);
+}
+
+.card-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 230px;
+}
+
+.card-txt h2 {
+    font-size: 22px;
+    text-align: center;
+    color: var(--dark-brown);
+    width: 380px;
+    padding: 0 10px;
+    margin: 15px auto;
+    border-top: 2px solid var(--dark-brown);
+    border-bottom: 2px solid var(--dark-brown);
+}
+
+.card-txt p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: var(--dark-brown);
+    text-align: justify;
+    padding: 0 20px;
+
+}
+
+.card-txt a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background: var(--golden-rod);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white-smoke);
+    font-weight: bold;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.card-txt a:hover {
+    scale: 1.05;
+    color: var(--golden-rod);
+    background-color: var(--light-gray);
+
+}
+
+/**Texto complementar **/
+
+.text-collection-point {
+    background: var(--rosy-brown);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.title-text-collection-point {
+    width: 1200px;
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--dark-brown);
+    border-top: 4px solid var(--dark-brown);
+    border-bottom: 4px solid var(--dark-brown);
+    text-transform: capitalize;
+}
+
+.p-text-collection-point {
+    width: 1200px;
+    font-size: 22px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    color: var(--dark-brown);
+    text-align: justify;
+    margin-top: 40px;
+}
+
+/*Responsive*/
+
+@media (max-width: 1360px) {
+
+    .collection-point h1,
+    .title-text-collection-point, 
+    .cards {
+        width: 1120px;
+    }
+
+    .p-text-collection-point {
+        width: 1120px;
+        margin: 40px 0;
+    }
+}
+
+@media (max-width: 1240px) {
+
+    .collection-point h1,
+    .title-text-collection-point,
+    .cards,
+    .p-text-collection-point {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+
+    .collection-point h1,
+    .title-text-collection-point,
+    .cards, 
+    .p-text-collection-point{
+        width: 880px;
+    }
+
+    .card{
+        width: 400px;
+        margin: 10px;
+        margin-bottom: 60px;
+    }
+
+    .card img{
+        width: 380px;
+    }
+    .title-text-collection-point {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 920px) {
+    .collection-point h1,
+    .title-text-collection-point{
+        width: 760px;
+        font-size: 35px;
+    }
+
+    .cards{
+        width: auto;
+    }
+
+    .card{
+        width: 540px;
+        margin: 10px auto;
+        margin-bottom: 60px;   
+    }
+
+    
+    .card-txt{
+        width: auto;
+    }
+    
+    .card img,
+    .card h2{
+        width: 500px;
+    }
+
+    .card p{
+        width: 500px;
+        padding: 0;
+    }
+
+    .p-text-collection-point {
+        width: 760px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .collection-point h1,
+    .title-text-collection-point{
+        width: 600px;
+    }
+
+    .card{
+        width: 450px;
+    }
+
+    .card img, .card h2{
+        width: 430px;
+    }
+
+    .card p{
+        width: 420px;
+        font-size: 20px;
+    }
+
+    .p-text-collection-point {
+        width: 600px;
+        font-size: 20px;
+    }   
+}
+
+@media (max-width: 670px) {
+    .collection-point h1,
+    .title-text-collection-point{
+        width: 500px;
+        font-size: 25px;
+        border-bottom: 3px solid var(--dark-brown);
+        border-top: 3px solid var(--dark-brown);
+    }
+
+    .card{
+        width: 400px;
+    }
+
+    .card img, .card h2{
+        width: 380px;
+    }
+
+    .card p{
+        width: 370px;
+        font-size: 14px;
+    }
+
+    .card-txt a{
+        font-size: 14px;
+    }
+    
+    .p-text-collection-point {
+        width: 500px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 540px) {
+    .collection-point h1,
+    .title-text-collection-point{
+        width: 400px;
+    }
+
+    .card{
+        width: 320px;
+    }
+
+    .card img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .card h2{
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .card p{
+        width: 290px;
+    }
+
+    .p-text-collection-point {
+        width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .collection-point h1,
+    .title-text-collection-point{
+        width: 280px;
+        font-size: 25px;
+    }
+
+    .card{
+        width: 280px;
+    }
+
+    .card img{
+        width: 260px;
+        height: 260px;
+    }
+
+    .card h2{
+        width: 260px;
+        font-size: 18px;
+    }
+
+    .card p{
+        width: 250px;
+        font-size: 14px;
+    }
+
+    .card-txt a{
+        font-size: 14px;   
+    }
+
+    .card-txt {
+        margin-bottom: 10px;
+    }
+
+    .p-text-collection-point {
+        width: 280px;
+    }
+}
+

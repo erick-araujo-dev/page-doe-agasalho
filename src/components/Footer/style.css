@@ -1,0 +1,271 @@
+footer {
+    background-image: linear-gradient(to bottom, var(--steel-blue), #194058);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px -3px 2px #0000005b;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 320px;
+}
+
+.contacts h1 {
+    width: 1200px;
+    margin: auto;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: var(--white-smoke);
+    border-top: 2px solid var(--white-smoke);
+    border-bottom: 2px solid var(--white-smoke);
+}
+
+.contacts-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 1200px;
+    margin: auto;
+}
+
+.contacts-content ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contacts-content li {
+    list-style: none;
+}
+
+
+.contacts-content i {
+    color: var(--white-smoke);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.contacts-content a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white-smoke);
+    font-size: 18px;
+}
+
+.contacts-content a:hover {
+    scale: 1.05;
+}
+
+.logo-footer {
+    width: 500px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    margin-top: 40px;
+    border-top: 1px solid #0000001a;
+}
+
+.copyright p {
+    color: var(--white-smoke);
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.assign a {
+    font-family: 'Marck Script', cursive;
+    font-size: 25px;
+    color: var(--golden-rod);
+    text-decoration: none;
+    margin: 10px;
+}
+
+.assign:hover {
+    scale: 1.1;
+    transform: rotate(-5deg);
+    animation: swing 2s ease-in-out infinite alternate;
+
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 1360px) {
+
+    .contacts h1,
+    .contacts-content {
+        width: 1120px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+
+    .contacts h1,
+    .contacts-content {
+        width: 1000px;
+    }
+
+    .logo-footer {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts h1 {
+        width: 874px;
+        font-size: 35px;
+    }
+
+    .contacts-content {
+        width: 874px;
+    }
+
+    .logo-footer {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .contacts h1,
+    .contacts-content {
+        width: 760px;
+    }
+
+    .logo-footer {
+        width: 350px;
+    }
+
+    .contacts-content a {
+        font-size: 16px;
+    }
+
+    .contacts-content i {
+        font-size: 22px;
+        margin: 5px;
+    }
+
+    .copyright {
+        height: 50px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+    }
+
+    .assign a {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .contacts h1,
+    .contacts-content {
+        width: 600px;
+    }
+
+    .logo-footer {
+        width: 250px;
+    }
+
+    .contacts-content a {
+        font-size: 12px;
+    }
+
+    .contacts-content i {
+        font-size: 16px;
+    }
+
+    .assign a {
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 670px) {
+    .contacts h1 {
+        width: 500px;
+        font-size: 25px;
+
+    }
+
+    .contacts-content {
+        width: 500px;
+    }
+
+    .logo-footer {
+        width: 200px;
+    }
+
+    .contacts-content a {
+        font-size: 11px;
+    }
+
+    .contacts-content i {
+        font-size: 14px;
+    }
+
+    .copyright p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .contacts h1 {
+        width: 400px;
+        font-size: 25px;
+    }
+
+    .contacts-content {
+        width: 400px;
+    }
+
+    .assign a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .contacts h1 {
+        width: 280px;
+    }
+
+    .contacts-content {
+        width: 280px;
+        flex-direction: column-reverse;
+    }
+
+
+    .logo-footer {
+        width: 150px;
+        margin-bottom: 60px;
+    }
+
+    .contacts-content i {
+        font-size: 12px;
+    }
+
+    .copyright p {
+        font-size: 9px;
+    }
+
+    .assign a {
+        font-size: 14px;
+    }
+}
